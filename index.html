@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <span class="menu-button" id="menu-button"></span>
+        <h1>The Dragon Brothers (95872B)</h1>
+    </header>
+
+    <div class="side-menu" id="side-menu">
+        <a href="/">Home</a>
+        <a href="/bio">Biography</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <section class="photo-gallery-container">
+        <h2>Our Team & Socials</h2>
+        <button class="arrow left" onclick="changeImage(-1)">❮</button>
+        <div class="photo-gallery">
+            <img src="images\team1.jpg" alt="Team Photo" class="active" data-title="Team Photo" data-description="The team at alliance selection at Ladue competition!">
+            <img src="images\team2.jpg" alt="Competition Photo" data-title="Competition Day" data-description="Our team in action at a robotics competition!">
+            <img src="images\social1.jpg" alt="Social Media Post" data-title="Parkway teamates" data-description="Our teamates from Parkway West!">
+            <img src="imamges\social2.jpg" alt="More Socials" data-title="Another Post" data-description="Check out our latest update!">
+            <img src="images\robot1.jpg" alt="Our Robot" data-title="Our Robot" data-description="The robot we built for this season!">
+        </div>
+        <div class="gallery-info">
+            <h3 id="image-title">Team Photo</h3>
+            <p id="image-description">The team at alliance selection at Ladue competition!</p>
+        </div>
+        <button class="arrow right" onclick="changeImage(1)">❯</button>
+    </section>
+
+    <section class="quick-info">
+        <hr></hr>
+        <hr class="flipped"></hr>
+        <h3 class="faq-header">Quick Info</h3>
+        <div class="faq-container">
+            <div class="faq-question" onclick="toggleFAQ(this)">Where are we from?</div>
+            <div class="faq-answer">We are from Northwest High School, High Ridge, Missouri</div>
+            <div class="faq-question" onclick="toggleFAQ(this)">As a team, what do we strive for?</div>
+            <div class="faq-answer">As a team, we strive to innovate and create a fully function robot that can achieve our goals. We also intend to stand out and make a name for ourselves.</div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 The Dragon Brothers Robotics Team. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
