@@ -20,6 +20,10 @@ header {
     height: 100vh;
 }
 
+.spacer-5 {
+    height: 5vh;
+}
+
 .left {
     text-align: left;;
 }
