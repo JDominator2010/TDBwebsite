@@ -29,6 +29,16 @@ const summaries = [
       { src: "https://jdominator2010.github.io/TDBwebsite/images/overunder/4.jpg", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
     ]
   },
+  {
+    title: "2024-2025 (9th grade) &nbsp;||&nbsp; High Stakes",
+    description: `No summary yet. Check back later! (will be written when year is over)`,
+    images: [
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/highstakes/1.jpg", title: "Check back later!", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/highstakes/2.jpg", title: "Check back later!", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/highstakes/3.jpg", title: "Check back later!", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/highstakes/4.jpg", title: "Check back later!", description: "The team at alliance selection at Ladue competition!" },
+    ]
+  },
   // Add other time points here
 ];
 
