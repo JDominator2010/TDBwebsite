@@ -35,9 +35,7 @@ function toggleFAQ(element) {
     }
 }
 
-// function gallery(){
-//     const img_dir = ""
-// }
+
 
 
 menuButton.addEventListener("click", () => {
