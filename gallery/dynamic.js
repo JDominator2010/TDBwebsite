@@ -18,8 +18,6 @@ async function loadImagesFromRepo(directory = "images") {
                 const img = document.createElement("img");
                 img.src = file.download_url;
                 img.alt = file.name;
-                img.style.width = "200px";
-                img.style.margin = "10px";
                 imageContainer.appendChild(img);
             } else if (file.type === "dir") {
                 // Recursively fetch images from subdirectory
