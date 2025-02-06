@@ -1,4 +1,4 @@
-async function loadImagesFromRepo(directory = "images") {
+async function loadImagesFromRepo(directory = "images", subdirs = true ) {
     const username = "jdominator2010";  // Replace with your GitHub username
     const repo = "TDBwebsite";  // Replace with your repository name
     const branch = "main";  // Replace with your branch name
@@ -19,7 +19,7 @@ async function loadImagesFromRepo(directory = "images") {
                 img.src = file.download_url;
                 img.alt = file.name;
                 imageContainer.appendChild(img);
-            } else if (file.type === "dir") {
+            } else if (file.type === "dir" && subdirs) {
                 // Recursively fetch images from subdirectory
                 await loadImagesFromRepo(file.path);
             }
