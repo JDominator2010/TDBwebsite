@@ -1,3 +1,4 @@
+/* Existing styles */
 body {
     font-family: 'Orbitron', sans-serif;
     background-color: #000;
@@ -17,44 +18,67 @@ header {
 }
 
 .lof {
-    /* margin-right: 25px;
-    margin-top: 25px;
-    margin-bottom: 5px; */
     display: flex;
     align-items: left;
     width: 45px;
     height: 45px;
 }
 
-.fbheader {
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    width: 100%;
-    height: 150x;
-    margin-bottom: 200px;
-    margin: 0 auto;
+h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
 }
 
-.l {
-    margin-bottom: 100px;
+.timeline {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 50px;
+    position: relative;
 }
 
-.lof:hover {
-    transition: 0.1s all;
-    transform: scale(1.1);
+.event {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.spacer {
-    height: 100vh;
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
 }
 
-.spacer-5 {
-    height: 5vh;
+.circle:hover {
+    transform: scale(1.2);
+}
+
+.summary {
+    width: 80%;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #222;
+}
+
+.outline-white {
+    outline: 0.2px solid white;
 }
 
 .left {
-    text-align: left;;
+    text-align: left;
 }
 
 .tab {
@@ -64,100 +88,6 @@ header {
 .general-font {
     font-size: 0.9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.outline-white {
-    outline: 0.2px solid white;
-}
-
-.bullet-point {
-    margin-left: 40px;
-    display: list-item;
-}
-
-.scroll-y {
-    height: 350px;
-    overflow-y: auto;
-    border: 0.2px solid white;
-}
-
-.overflow-hidden {
-    overflow: hidden;
-}
-
-.same-line {
-    display: flex;
-    flex-direction: row;
-}
-
-.inherit-all {
-    inherits: all;
-}
-
-.menu-button {
-    font-size: 24px;
-    cursor: pointer;
-    color: #0ff;
-    transition: transform 0.3s ease;
-    position: absolute;
-    left: 20px;
-    z-index: 9999;
-}
-
-.menu-button.open {
-    transform: rotate(180deg);
-}
-
-.menu-button.open::before {
-    content: "→";
-}
-
-.menu-button::before {
-    content: "☰";
-}
-
-h1 {
-    flex-grow: 1;
-    text-align: center;
-    margin: 0;
-}
-
-.side-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #111;
-    color: #fff;
-    transition: left 0.3s ease;
-    padding-top: 60px;
-    z-index: 1000;
-}
-
-.side-menu.open {
-    left: 0;
-}
-
-.side-menu a {
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #0ff;
-    display: block;
-    transition: background-color 0.3s;
-}
-
-.side-menu a:hover {
-    background-color: #333;
-}
-
-.photo-gallery-container {
-    position: relative;
-    padding: 20px;
-    background: #222;
-    max-width: 100%;
-    overflow: hidden;
 }
 
 .photo-gallery-container-bio {
@@ -197,103 +127,6 @@ h1 {
     outline: 2px solid #079dca;
 }
 
-.gallery-info {
-    position: relative;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 5;
-    margin-top: 10px;
-}
-
-hr {
-    border: 0;
-    height: 10px;
-    background: linear-gradient(135deg, #ffffff 25%, transparent 25%); /*#003a5c*/
-    border-radius: 0 0 5px 5px;
-}
-
-hr.flipped {
-    background: linear-gradient(315deg, #ffffff 25%, transparent 25%);
-}
-
-hr.thin {
-    height: 5px;
-}
-
-.quick-info {
-    background: #222;
-    padding: 20px;
-}
-
-.faq-header {
-    background: #222;
-    background-color: #222;
-}
-
-.faq-container {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    background: #222;
-}
-
-.faq-item {
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    margin: 10px 0;
-    padding: 10px;
-}
-
-.faq-question {
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(255, 145, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    background: #111;
-    transition: background-color 0.3s ease;
-}
-
-.faq-question:hover {
-    background: #333;
-}
-
-.faq-answer {
-    display: block; /* Initially hidden */
-    max-height: 0; /* Start with zero height */
-    overflow: hidden; /* Hide the content overflow */
-    padding: 0 10px; /* No padding initially */
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.2);
-    outline: 0.5px solid white;
-    color: #aaa;
-    border-radius: 8px;
-    margin-top: 5px;
-    transition: max-height 0.3s ease, padding 0.3s ease, outline 0.3s ease; /* Transition for sliding effect and outline */
-}
-
-.faq-question.open + .faq-answer {
-    max-height: 500px; /* Set a max-height large enough to accommodate the content */
-    padding: 10px; /* Add padding when expanded */
-}
-
-
-
-.faq-question span {
-    font-size: 24px;
-    transition: transform 0.9s ease;
-}
-
-.faq-question.open span {
-    transform: rotate(90deg);
-}
-
 .arrow {
     position: absolute;
     top: 50%;
@@ -321,6 +154,7 @@ footer {
     font-size: 14px;
 }
 
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .photo-gallery {
         gap: 10px;
@@ -338,13 +172,27 @@ footer {
         transform: scale(1.2);
     }
 
-    .gallery-info {
-        bottom: 10px;
-        left: 10px;
-    }
-
     .arrow {
         font-size: 18px;
         padding: 5px;
+    }
+
+    /* Adjustments for the timeline in small screens */
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .circle {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .summary {
+        width: 90%;
+        margin-top: 20px;
     }
 }
