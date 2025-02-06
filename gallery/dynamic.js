@@ -10,9 +10,10 @@ async function loadImagesFromRepo(directory = "images") {
 
         const files = await response.json();
         const imageContainer = document.getElementById("photo-gallery");
+        const exclude = ["Facebook.png"];
 
         for (const file of files) {
-            if (file.type === "file" && file.name.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
+            if (file.type === "file" && file.name.match(/\.(jpg|jpeg|png|gif|webp)$/i) && !exclude.includes(file.name)) {
                 // Create an img element for each image
                 const img = document.createElement("img");
                 img.src = file.download_url;
