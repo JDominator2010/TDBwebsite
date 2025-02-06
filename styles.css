@@ -304,7 +304,7 @@ hr.thin {
     cursor: pointer;
     font-size: 24px;
     padding: 10px;
-    z-index: 9999;
+    z-index: 8000;
 }
 
 .arrow.left {
