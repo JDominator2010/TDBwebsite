@@ -414,16 +414,39 @@ footer {
         font-size: 18px;
         padding: 5px;
     }
+    .timeline-line {
+        position: absolute;
+        transform: rotateZ(90deg);
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #222;
+        z-index: -1; /* Keep the line behind the circles */
+    }
+    .timeline {
+        flex-direction: column; /* Stack events vertically */
+        align-items: center; /* Center events */
+    }
+
+    .event {
+        margin-bottom: 30px; /* Add space between events */
+    }
+
     .circle {
-        margin-top: 40px;
-        width: 20px;
-        height: 20px;
-        background-color: black;
-        border-radius: 50%;
-        border: 2px solid #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
+        width: 40px; /* Increase circle size for better visibility */
+        height: 40px;
+        margin-top: 20px; /* Adjust margin to avoid overlap */
+    }
+
+    .text {
+        font-size: 1.2em; /* Increase font size for readability */
+    }
+
+    .text.above {
+        transform: translateY(-80px); /* Adjust space above the text when above */
+    }
+
+    .text.below {
+        transform: translateY(-80px); /* Adjust space below the text when below */
     }
 }
