@@ -52,15 +52,15 @@ function loadSummary(index) {
   const summaryData = summaries[index];
   const summaryElement = document.getElementById('summary');
   summaryElement.innerHTML = `
-    <section class="outline-white">
+    <section class="outline-white c222">
       <h3 class="left">${summaryData.title}</h3>
       <p class="left tab general-font">${summaryData.description}</p>
       <h4 class="left">Pictures:</h4>
       <section class="photo-gallery-container-bio c222">
         <button class="arrow left" onclick="changeImage(-1)">❮</button>
-        <div class="photo-gallery">
+        <div class="photo-gallery c222">
           ${summaryData.images.map((image, i) => `
-            <img src="${image.src}" alt="${image.title}" class="${i === 0 ? 'active' : ''}" data-title="${image.title}" data-description="${image.description}">
+            <img src="${image.src}" alt="${image.title}" class="${i === 0 ? 'active' : ''} c222" data-title="${image.title}" data-description="${image.description}">
           `).join('')}
         </div>
         <button class="arrow right" onclick="changeImage(1)">❯</button>

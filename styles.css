@@ -10,6 +10,7 @@ body {
 
 .c222 {
     background-color: #222;
+    border: none;
 }
 
 header {
@@ -167,7 +168,7 @@ h1 {
 .photo-gallery-container-bio {
     position: relative;
     padding: 20px;
-    background: #000;
+    background: #222;
     max-width: 100%;
     overflow: hidden;
 }
