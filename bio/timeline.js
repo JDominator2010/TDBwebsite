@@ -92,3 +92,9 @@ function changeImage(direction) {
     descriptionElement.textContent = images[currentIndex].dataset.description;
     images[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 }
+
+menuButton.addEventListener("click", () => {
+  sideMenu.classList.toggle("open"); 
+  menuButton.classList.toggle("open"); 
+});
+
