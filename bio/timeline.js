@@ -56,7 +56,7 @@ function loadSummary(index) {
       <h3 class="left">${summaryData.title}</h3>
       <p class="left tab general-font">${summaryData.description}</p>
       <h4 class="left">Pictures:</h4>
-      <section class="photo-gallery-container-bio">
+      <section class="photo-gallery-container-bio c222">
         <button class="arrow left" onclick="changeImage(-1)">❮</button>
         <div class="photo-gallery">
           ${summaryData.images.map((image, i) => `
