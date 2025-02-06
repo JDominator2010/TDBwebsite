@@ -41,6 +41,12 @@ const summaries = [
   },
   // Add other time points here
 ];
+let currentIndex = 0;
+let images;
+const titleElement = document.getElementById("image-title");
+const descriptionElement = document.getElementById("image-description");
+const menuButton = document.getElementById("menu-button");
+const sideMenu = document.getElementById("side-menu");
 
 function loadSummary(index) {
   const summaryData = summaries[index];
@@ -61,4 +67,28 @@ function loadSummary(index) {
       </section>
     </section>
   `;
+
+  // Update images after loading new summary
+  images = document.querySelectorAll(".photo-gallery img");
+  titleElement.textContent = images[currentIndex].dataset.title;
+  descriptionElement.textContent = images[currentIndex].dataset.description;
+}
+
+function isLonger(list1, list2) {
+    return list1.length > list2.length;
+}
+
+function changeImage(direction) {
+    images = document.querySelectorAll(".photo-gallery img");  // Re-query images
+    images[currentIndex].classList.remove("active");
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+    images[currentIndex].classList.add("active");
+    titleElement.textContent = images[currentIndex].dataset.title;
+    descriptionElement.textContent = images[currentIndex].dataset.description;
+    images[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 }
