@@ -5,7 +5,14 @@ const descriptionElement = document.getElementById("image-description");
 const menuButton = document.getElementById("menu-button");
 const sideMenu = document.getElementById("side-menu");
 
+function isLonger(list1, list2) {
+    return list1.length > list2.length;
+  }
+
 function changeImage(direction) {
+    if (isLonger(document.querySelectorAll(".photo-gallery img"), images)) {
+        images = document.querySelectorAll(".photo-gallery img");
+    }
     images[currentIndex].classList.remove("active");
     currentIndex += direction;
     if (currentIndex < 0) {
