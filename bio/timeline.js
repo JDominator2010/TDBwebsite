@@ -13,10 +13,20 @@ const summaries = [
     title: "2022-2023 (7th grade) &nbsp;||&nbsp; Spin Up",
     description: `Spin Up was and still is our favorite game VEX has done by far. Even though at the game reveal at Worlds, we were scared and thought to ourselves, 'How is this even going to be possible?' But we came up with some great designs, and it really has been our best year yet. Though we did not make it to Worlds, it was the first year that we went to the U.S. Open, which was a great experience, especially the Mega Alliance Challenge. Overall, we were so insanely proud of ourselves this year.`,
     images: [
-      { src: "https://jdominator2010.github.io/TDBwebsite/images/tipping-point/1.jpg", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
-      { src: "https://jdominator2010.github.io/TDBwebsite/images/tipping-point/2.jpg", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
-      { src: "https://jdominator2010.github.io/TDBwebsite/images/tipping-point/3.jpg", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
-      { src: "https://jdominator2010.github.io/TDBwebsite/images/tipping-point/4.jpg", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/spinup/1.JPG", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/spinup/2.JPG", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/spinup/3.JPG", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/spinup/4.jpg", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+    ]
+  },
+  {
+    title: "2023-2024 (8th grade) &nbsp;||&nbsp; Over Under",
+    description: `Over Under overall wasn't one of our most favorite games. While we did well and enjoyed the game, it just wasn't able to beat Spin Up. Yet again, we did not make it to Worlds, but we did go back to the U.S. Open. This time, we brought home the Mega Alliance Champion trophy, which we were very proud of. We did make a good-looking bot this year, and it definitely functioned well. Overall, we did pretty well this year and were most definitely proud of ourselves.`,
+    images: [
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/overunder/1.JPG", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/overunder/2.JPG", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/overunder/3.JPG", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
+      { src: "https://jdominator2010.github.io/TDBwebsite/images/overunder/4.jpg", title: "Team Photo", description: "The team at alliance selection at Ladue competition!" },
     ]
   },
   // Add other time points here
