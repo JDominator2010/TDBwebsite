@@ -10,7 +10,7 @@ async function loadImagesFromRepo(directory = "images", subdirs = true ) {
 
         const files = await response.json();
         const imageContainer = document.getElementById("photo-gallery");
-        const exclude = ["Facebook.png"];
+        const exclude = ["facebook.png", "instagram.png", "linkedin.png", "twitter.png", "youtube.png"];
 
         for (const file of files) {
             if (file.type === "file" && file.name.match(/\.(jpg|jpeg|png|gif|webp)$/i) && !exclude.includes(file.name)) {
